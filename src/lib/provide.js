@@ -1,5 +1,7 @@
 import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js';
-import { Program, Provider, web3 } from '@project-serum/anchor';
+import * as pkg from '@project-serum/anchor';
+
+const { Program, Provider, web3 } = pkg;
 import idl from './idl';
 import kp from './keypair.json'
 import { GIFS } from './store';
